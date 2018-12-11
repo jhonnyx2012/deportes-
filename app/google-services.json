@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "46642965621",
+    "firebase_url": "https://deportesmas-c344b.firebaseio.com",
+    "project_id": "deportesmas-c344b",
+    "storage_bucket": "deportesmas-c344b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46642965621:android:65ee975659c63294",
+        "android_client_info": {
+          "package_name": "com.kaiman.sports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46642965621-sqmnv8se0mp5dij22b9318f1bnfblkgg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaiman.sports",
+            "certificate_hash": "32738647b9ed3c8ca18da8090c4a5c5f77b7cefd"
+          }
+        },
+        {
+          "client_id": "46642965621-aue4ehuvd0dv07d83j3c7j2srb9qavf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-juk0TgY0pTAIcQc-4ygJiM9oVTfo08E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46642965621-aue4ehuvd0dv07d83j3c7j2srb9qavf1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "46642965621-rk1lc7iri2edgvs7vrhs7pbqd8equqqs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mauriciofigueroa.Deportes"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

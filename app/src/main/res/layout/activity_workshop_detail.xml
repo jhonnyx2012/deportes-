@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.design.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="268dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="4dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/imagePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/profile_photo_gradient"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textInstructorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorPrimaryTextColor"
+                        android:textSize="16sp"
+                        tools:text="Instructor: Javiera Grubber" />
+
+                    <TextView
+                        android:id="@+id/textAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorPrimaryTextColor"
+                        android:textSize="16sp"
+                        android:autoLink="all"
+                        tools:text="Dirección: Plaza de Armas Curicó" />
+                    <TextView
+                        android:id="@+id/textEnclosure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorPrimaryTextColor"
+                        android:textSize="16sp"
+                        android:autoLink="all"
+                        tools:text="Recinto: Plaza de Armas Curicó" />
+                    <TextView
+                        android:id="@+id/textSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorPrimaryTextColor"
+                        android:textSize="16sp"
+                        android:autoLink="all"
+                        tools:text="Horario: de x a N" />
+
+                    <TextView
+                        android:id="@+id/textAvailability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorPrimaryTextColor"
+                        android:textSize="16sp"
+                        tools:text="50 cupos disponibles" />
+
+                    <TextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/colorPrimaryTextColor"
+                        android:textSize="16sp"
+                        android:autoLink="all"
+                        tools:text="En este taller se darán los conceptos básico de Every former smoker can tell you just how hard it is to stop smoking cigarettes. However, there are a range of stop smoking commodities that can assist you on your transition to a smoke-free lifestyle. Though there is no cure for smoking, there are a variety of smoking free videos, quit smoking aid groups and prescription and natural stop smoking aids that will make your endeavour to quit smoking cigarettes much easier for you. Quit Smoking Tips.\n\nA journey of a thousand miles must begin with a single step. Lao-tzu, Tao-te Ching " />
+
+                    <TextView
+                        android:id="@+id/textHowToGetThere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/how_to_get_there"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                    <Button
+                        android:id="@+id/buttonSubscribe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="30dp"
+                        app:backgroundTint="@color/colorAccent"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:visibility="gone"
+                        android:text="@string/subscribe_me"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/buttonNoAvailability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="30dp"
+                        android:enabled="false"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="@string/no_availability"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textAlreadySubscribed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:text="@string/already_subscribed"/>
+                </LinearLayout>
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
